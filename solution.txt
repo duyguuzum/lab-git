@@ -1,0 +1,57 @@
+Instructions
+1.First of all, install git if you don't have it yet, and create a GitHub account. ( You can refer to the lesson "Install Git and Create GitHub Account" in the prework. Follow the guidelines given there. Additionally, you can use these resources: Install git, Version control with git)
+
+2.Create a new repository in the GitHub. Name it Iron+ your name. Example: if your name is Alvaro, you will name the repo IronAlvaro.
+
+3.Clone that repo to your computer.
+
+$ git clone https://github.com/duyguuzum/IronDuygu.git
+
+4.Create a file in that folder. Name it about.txt and add a fun fact about yourself. (You can use the command line: touch nameOfTheFile.txt).
+
+$ touch about.txt
+
+5.Add the file you just created to the git.
+
+$ git add about.txt
+
+6.Commit the changes.
+
+$ git commit -m "file added"
+
+7.Push the changes to the GitHub and check your repository to make sure everything is there.
+
+$ git push
+
+Pair Programming Exercise
+1.Fork your classmate's repository.
+
+2.Clone the repository, so that you have it locally and can make changes.
+
+$ git clone https://github.com/duyguuzum/IronLaura.git
+
+3.Create a new branch named classmate.
+
+$ git branch classmate
+
+4.Create a new file with your name (ex. maya.txt) and finish the following sentence I enrolled Ironhack's Data Analytics bootcamp because.... When you are done, save the changes.
+
+$ touch duygu.txt
+$ echo " I enrolled Ironhack's Data Analytics bootcamp because I want to work in Europe especilly in Deutschland in the field of Data Analytics" >>duygu.txt
+
+5.Add the changes to the git.
+
+$ git add duygu.txt
+
+6.Commit and push the changes. Now, all the changes should be on your GitHub, inside the forked repository.
+
+$ git commit -m "information added"
+$ git push
+
+7.Create a pull request to make changes appear in the original repository.
+
+$ git pull
+
+8.Merge the branch your classmate created. Now everyone's repos should have the original file (about.txt) as well as the new one with your classmate's name.
+
+$ git merge classmate
